@@ -1,0 +1,111 @@
+/*!
+Theme Name: IgglesBlitz
+Theme URI: http://underscores.me/
+Author: Nicolaj Nielsen
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.1.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: iggles_blitz
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+IgglesBlitz is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Abstracts
+	## Mixins
+	## Variables
+# Base
+	## Normalize
+	## Typography
+# Layout
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Abstracts
+--------------------------------------------------------------*/
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Vendors
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import 
+"base/normalize",
+	"base/typography",
+	"base/base";
+
+
+	/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import 
+	"layout/header",
+	"layout/footer",
+	"layout/navigation",
+	"layout/content-sidebar";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Themes
+--------------------------------------------------------------*/
+@import "themes/midnight-green.scss";
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "base/modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "base/modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "base/modules/clearings";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "base/modules/infinite-scroll";

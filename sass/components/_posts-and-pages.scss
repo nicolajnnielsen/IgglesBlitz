@@ -1,0 +1,196 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+/*--------------------------------------------------------------
+## General Post and page styles
+--------------------------------------------------------------*/
+
+.post, .widget-area, .page-entry,
+.search .no-results, .error-404,
+.posts-navigation, .post-navigation,
+.comments-wrapper, .search-results .page,
+.search .page-header, .archive .page-header {
+	background-color: #fff;
+	padding: 1em;
+	border: 5px solid var(--color-accent);
+	margin-bottom: 0;
+}
+
+.search .no-results {
+	margin-top: 1em;
+}
+
+.error-404 .search-form {
+	margin-bottom: 1em;
+}
+
+.post-navigation {
+	border-top: none;
+}
+
+.post__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.post__header {
+	.entry-title {
+		margin-bottom: 0.4em;
+
+		a {
+			color: var(--color-header);
+	
+			&:visited {
+				color: var(--color-header);
+			}
+			&:hover {
+				color: var(--color-link);
+			}
+		}
+	}
+}
+
+.post__content {
+	flex-grow: 1;
+	> p, > ul {
+		max-width: 70ch;
+	}
+}
+
+.post__footer {
+	margin-bottom: 1em;
+}
+
+.post__footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	@include font-size(0.875);
+
+	.entry-meta {
+		margin-right: 0.3em;
+	}
+	.cat-links, .comments-link, .tags-links {
+		margin-right: 0.3em;
+		&::before {
+			content: "|";
+			margin-right: 0.3em;
+		}
+	}
+}
+
+@media #{$mediaQuery-md} {
+	.post__content {
+		// Belowe line can be used if there is need to enforce max-with of content, for example to prevent overflow if white-space: pre-wrap is removed from pre elements
+		// max-width: calc(100% - 200px - 2rem);
+	}
+
+	.widget-area {
+		padding: 1.5em;
+	}
+}
+
+
+
+@media #{$mediaQuery-xl} {
+	.post__body {
+		flex-direction: row-reverse;
+	}
+
+	.post__footer {
+		flex: 0 0 200px;
+		margin-left: 2rem;
+		position: relative;
+	}
+	
+	.post__footer-content {
+		flex-direction: column;
+		position: sticky;
+		top: 3em;
+		border-radius: 20px;
+		padding: 1.2em;
+		border: 5px solid var(--color-primary);
+
+		.cat-links, .comments-link {
+			margin-top: 0.4em;
+
+			&::before {
+				content: none;
+				margin: 0
+			}
+		}
+	}
+}
+
+@media (min-width: 1350px) {
+	.post__footer {
+		flex-basis: 250px;
+	}
+}
+
+/*--------------------------------------------------------------
+## Excerpt Posts
+--------------------------------------------------------------*/
+
+.post-excerpt__content {
+	margin-top: 0.75em;
+}
+
+.post-excerpt {
+	display: flex;
+	flex-direction: column;
+
+	.post__header h2 {
+		margin-bottom: 0.2em;
+		margin-top: 0;
+	}
+}
+
+.post-excerpt__meta {
+	@include font-size(0.875);
+}
+
+.post-excerpt__footer {
+	@include font-size(0.875);
+	margin-top: auto;
+
+	.cat-links {
+		margin-right: 0.3em;
+	}
+
+	.comments-link, .tags-links {
+		margin-right: 0.3em;
+		&::before {
+			content: "|";
+			margin-right: 0.3em;
+		}
+	}
+}
+
+.search .page-header, .archive .page-header {
+	grid-column: 1 / -1;
+
+	.page-title {
+		margin: 0;
+	}
+}

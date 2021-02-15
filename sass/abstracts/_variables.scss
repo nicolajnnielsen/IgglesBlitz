@@ -1,0 +1,82 @@
+/*** Colours ***/
+
+$color__primary: #046A38;
+$color__secondary: #01821F;
+$color__accent: #27251F;
+// $color__accent: #8A8D8F;
+$color__accent-2: #91999F;
+
+$color__text-main: #404040;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #01821F;
+$color__link-visited: #04356A;
+$color__link-hover: #04356A;
+
+
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__text-screen: #21759b;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+/**** Custom Propoties ****/
+:root {
+	--color-primary: #{$color__primary};
+	--color-secondary: #{$color__secondary};
+	--color-accent: #{$color__accent};
+	--color-accent-2: #{$color__accent-2};
+	--color-link: #{$color__link};
+	--color-link_hover: #{$color__link-hover};
+	--color-header: #{$color__primary};
+}
+
+
+/*** Typography ***/
+
+$font__main: 'Lato', sans-serif;
+$font__main: 'Open Sans', sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+/*** Structure ***/
+
+$size__site-main: 1400px;
+$size__site-sidebar: 1120px;
+
+$mediaQuery-sm: "screen and (min-width: 576px)";
+$mediaQuery-md: "screen and (min-width: 768px)";
+$mediaQuery-lg: "screen and (min-width: 992px)";
+$mediaQuery-xl: "screen and (min-width: 1200px)";
+
+$mq-mw-sm: 576px;
+$mq-mw-md: 768px;
+$mq-mw-lg: 992px;
+$mq-mw-xl: 1200px;
+
+
+/*** Columns ***/
+
+$columns: (
+	1: 100%,
+	2: 50%,
+	3: 33.33%,
+	4: 25%,
+	5: 20%,
+	6: 16.66%,
+	7: 14.28%,
+	8: 12.5%,
+	9: 11.11%
+);
+
+$columns__margin: 3.8%;

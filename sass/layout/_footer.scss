@@ -1,0 +1,22 @@
+.site-footer {
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-accent);
+	color: white;
+
+	.site-info p {
+		text-align: center;
+
+		> a {
+			color: var(--color-header);
+
+			&:hover {
+				color: var(--color-link);
+			}
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

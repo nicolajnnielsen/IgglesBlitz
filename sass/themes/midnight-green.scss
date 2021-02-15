@@ -1,0 +1,40 @@
+.midnight-green{
+	--color-primary: #004C54;
+	--color-secondary: #21666E;
+	--color-accent: #000;
+	// --color-accent: #ACC0C6;
+	--color-accent-2: #ACC0C6;
+	// --color-accent-2: #565A5C;
+	--color-header: #004C54;
+	--color-link: #21666E;
+	--color-link_hover: #060053;
+}
+
+.midnight-green .post, 
+.midnight-green .page-entry,
+.midnight-green .widget-area, 
+.midnight-green .posts-navigation,
+.midnight-green .post-navigation,
+.midnight-green .comments-wrapper {
+	border-color: var(--color-accent-2)
+}
+
+.header-image--midnight-green {
+	display: none;
+}
+
+.midnight-green .header-image--midnight-green {
+	display: block;
+}
+
+.midnight-green .header-image--kelly-green {
+	display: none;
+}
+
+// .midnight-green .post__footer-content {
+// 	border-color: var(--color-accent);
+// }
+
+.midnight-green #btnColorToggle {
+	background-color: $color__primary;
+}

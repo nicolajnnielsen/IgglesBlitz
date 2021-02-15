@@ -1,0 +1,19 @@
+<?php
+/**
+ * The sidebar containing the widget area for the left side of the header
+ * 
+ * For best result, use only one widget in this area
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package IgglesBlitz
+ */
+
+if ( ! is_active_sidebar( 'header_left' ) ) {
+	return;
+}
+?>
+
+<div class="header__sidebar header__sidebar-left">
+	<?php dynamic_sidebar( 'header_left' ); ?>
+</div>

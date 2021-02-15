@@ -1,0 +1,15 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-wrapper {
+	background-color: #fff;
+	padding: 1em !important;
+	border: 5px solid var(--color-accent);
+	margin-bottom: 0;
+	margin-top: 0;
+	border-top: none;
+}

@@ -1,0 +1,88 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	> h2 {
+		margin-bottom: 0.25em;
+	}
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+.search-form {
+	display: flex;
+
+	.search-label {
+		flex: 0 1 280px;
+
+		.search-field {
+			width: 100%;
+		}
+	}
+
+	.search-submit {
+		background-color: var(--color-primary);
+		color: white;
+		padding: 0;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--color-secondary);
+		}
+
+		.dashicons {
+			height: 100%;
+			width: 34px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&::before {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+.textwidget > p {
+	@include font-size(1.125);
+	margin-bottom: 0.5em;
+}
+
+.widget_recent_entries, .widget_meta {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+
+		li {
+			@include font-size(1.125);
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+.widget_rss {
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			margin-bottom: 0.75em;
+		}
+
+		a {
+			@include font-size(1.125);
+		}
+
+		.rssSummary {
+			padding-left: 0.5em;
+			@include font-size(0.75);
+		}
+	}
+}
+
+.widget_archive select {
+	min-width: 200px;
+}
